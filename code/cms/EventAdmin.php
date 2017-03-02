@@ -10,6 +10,5 @@ class EventAdmin extends ModelAdmin
 
     private static $managed_models = [
         Event::class,
-        Schedule::class
     ];
 }

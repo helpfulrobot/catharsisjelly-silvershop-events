@@ -1,7 +1,8 @@
 <?php
 
 /**
- * @method Event Ticket
+ * @method Ticket Ticket
+ * @property int TicketID
  */
 class Ticket_OrderItem extends OrderItem
 {
@@ -12,14 +13,14 @@ class Ticket_OrderItem extends OrderItem
     /**
      * the has_one join field to identify the buyable
      */
-    private static $buyable_relationship = Event::class;
+    private static $buyable_relationship = Ticket::class;
 
     public function TableTitle()
     {
         $ticket = $this->Ticket();
-        $tabletitle = ($ticket) ? $ticket->Title : $this->i18n_singular_name();
-        $this->extend('updateTableTitle', $tabletitle);
-        return $tabletitle;
+        $tableTitle = ($ticket) ? $ticket->Title : $this->i18n_singular_name();
+        $this->extend('updateTableTitle', $tableTitle);
+        return $tableTitle;
     }
 
     public function Link()

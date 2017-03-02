@@ -1,11 +1,23 @@
 {
     "name": "catharsisjelly/silvershop-events",
     "description": "Events and ticketing for Silvershop",
+    "type" : "silverstripe-module",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Chris Lock",
             "email": "code@catharsis.co.uk"
         }
     ],
-    "require": {}
+    "require" : {
+      "silverstripe/cms": "~3.1",
+      "silverstripe/framework": "~3.1",
+      "silvershop/core": "*"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "~3.7"
+    },
+    "extra" : {
+        "installer-name": "silvershop-events"
+    }
 }
