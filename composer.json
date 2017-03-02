@@ -1,0 +1,11 @@
+{
+    "name": "catharsisjelly/silvershop-events",
+    "description": "Events and ticketing for Silvershop",
+    "authors": [
+        {
+            "name": "Chris Lock",
+            "email": "code@catharsis.co.uk"
+        }
+    ],
+    "require": {}
+}
