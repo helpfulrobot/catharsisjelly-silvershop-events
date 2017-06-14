@@ -16,6 +16,7 @@ class Schedule extends DataObject
         'StartTime' => Time::class,
         'EndDate' => Date::class,
         'EndTime' => Time::class,
+        'LengthInMinutes' => Integer::class
     ];
 
     private static $has_one = [
